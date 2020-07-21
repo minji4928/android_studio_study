@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ViewPageActivity">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_test_vp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#FFCD42"
+            android:layout_below="@+id/vp_test_vp"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_above="@+id/ll_bottom"
+            android:layout_below = "@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="300dp"
+                   android:layout_marginBottom="20dp"
+                   tools:listitem="@layout/card_item"
+                   android:layout_marginRight="10dp">
+
+               </androidx.recyclerview.widget.RecyclerView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#343434" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#343434"
+                    android:layout_marginBottom="10dp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#343434"
+                    android:layout_marginBottom="10dp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#343434"
+                    android:layout_marginBottom="10dp"
+                    /><ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#343434"
+                android:layout_marginBottom="10dp"
+                /><ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#343434"
+                android:layout_marginBottom="10dp"
+                />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#343434"
+                    android:layout_marginBottom="10dp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#343434"
+                    android:layout_marginBottom="10dp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#343434"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#ff00ff"
+                android:translationY="-50dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
